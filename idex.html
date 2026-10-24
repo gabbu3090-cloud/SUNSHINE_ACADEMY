@@ -1,1 +1,307 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Academy</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #123c69;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            margin-bottom: 0;
+        }
+
+        nav {
+            background-color: #0b2545;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #123c69;
+            border-bottom: 2px solid #ffd166;
+            padding-bottom: 8px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #123c69;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f0f4f8;
+        }
+
+        tbody tr:hover {
+            background-color: #e0ecf7;
+        }
+
+        form {
+            max-width: 550px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input:focus, select:focus {
+            outline: 2px solid #123c69;
+            border-color: #123c69;
+        }
+
+        button {
+            background-color: #123c69;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d5a96;
+        }
+
+        footer {
+            background-color: #0b2545;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        footer a {
+            color: #ffd166;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            main {
+                padding: 0 12px;
+            }
+
+            section {
+                padding: 16px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="home">
+        <h1>Student Academy</h1>
+        <p>Learn, Grow and Succeed!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#students">Students</a>
+        <a href="#registration">Register</a>
+    </nav>
+
+    <main>
+
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <p>We offer the following courses to help students build their skills:</p>
+
+            <ul>
+                <li>Data Science</li>
+                <li>Web Development</li>
+                <li>Computer Programming</li>
+                <li>Database Management</li>
+            </ul>
+        </section>
+
+        <section id="steps">
+            <h2>Registration Steps</h2>
+
+            <ol>
+                <li>Choose your preferred course.</li>
+                <li>Fill in the registration form.</li>
+                <li>Provide your correct email address.</li>
+                <li>Submit the form to complete registration.</li>
+            </ol>
+        </section>
+
+        <section id="students">
+            <h2>Student Marks</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Course</th>
+                        <th>Marks (%)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>John Mwangi</td>
+                        <td>Data Science</td>
+                        <td>85</td>
+                    </tr>
+
+                    <tr>
+                        <td>002</td>
+                        <td>Mary Wanjiku</td>
+                        <td>Web Development</td>
+                        <td>92</td>
+                    </tr>
+
+                    <tr>
+                        <td>003</td>
+                        <td>Peter Kamau</td>
+                        <td>Computer Programming</td>
+                        <td>78</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="registration">
+            <h2>Student Registration Form</h2>
+            <p>Complete the form below to register for a course.</p>
+
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required>
+
+                <label for="email">Email Address:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required>
+
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">-- Choose a course --</option>
+                    <option value="data-science">Data Science</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="programming">Computer Programming</option>
+                    <option value="database-management">Database Management</option>
+                </select>
+
+                <button type="submit">Register Now</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Academy. All rights reserved.</p>
+        <p>Email: <a href="mailto:info@studentacademy.com">info@studentacademy.com</a></p>
+    </footer>
+
+</body>
+</html>
